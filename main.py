@@ -1,4 +1,6 @@
-def test(note, integer) :
-  print ("%s %d" % (note, integer))
+def returnInt(a, b):
+  result = a + b
+  return result
 
-test("정수포함 파라미터:", 12345)
+tempInt = returnInt(5, 5)
+print(tempInt)
