@@ -1,24 +1,21 @@
-# List 선언, 2가지의 방법
+# tuple 연습
 
-x = list()
-y = []
+x = tuple()
+y = ()
 
 print(x)
 print(y)
 
-x = [5,1,2,4] # List에 지정한 변수 채워넣기
-print(sorted(x)) # 오름차순 정렬 후 출력
-print(sum(x)) # List의 변수를 모두 더한 후 출력
-print(x[0]) # List의 원하는 값 출력
+# List와 동일하게 선언할 수 있으며 비슷한 기능을 가지고 있음
+x = (1, 2, 3)
+y = ('a', 'b', 'c')
+z = (1, "hello", "there")
 
-for n in x:
-  print(n)
-  # x에 든 내용을 n에 넣어가며 출력
-  # 자바의 for (String s : String[]) 와 유사한 기능이지만 type을 기재하지 않음.
+# List와 지원하는 기능을 이용 할 수 있음
+print(x + y)
+print('a' in y)
+print(z.index(1))
 
-print(x.index(2)) # List 안에 찾고자 하는 내용의 위치를 알려줌
-
-if 5 in x: # List 조건문
-  print("true")
-else:
-  print("false");
+# 하지만 이미 선언한 값을 변경 할 수 없음
+# 자바의 Enum과 비슷한 매커니즘으로 보임
+# x[0] = 10 : Error
