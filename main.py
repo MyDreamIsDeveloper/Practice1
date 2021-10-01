@@ -1,16 +1,15 @@
-# 먼저 이름과 나이를 받아온다.
-# 나이가 10살 미만이면 "안녕" 을 출력한다.
-# 나이가 10살 이상, 20살 미만이면 "안녕하세요" 를 출력한다.
-# 그 외에는 "안녕하십니까" 를 출력한다.
+# for, while
 
-def getStatus(name, age):
-  if age < 10:
-    print("안녕")
-  elif age >= 10 and age < 20:
-    print("안녕하세요")
-  else:
-    print("안녕하십니까")
+for i in range(10):
+  print(i) # i는 변수, range는 반복 횟수
 
-getStatus("김철수", 8)
-getStatus("김미영", 14)
-getStatus("김순자", 41)
+  if i > 2:
+    if i == 3:
+      continue
+    break
+
+i = 0;
+while i < 10:
+  print(i)
+  i+=1
+  # 조건문 포함 while loop
