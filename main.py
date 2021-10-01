@@ -1,5 +1,4 @@
-def test(note1, note2) :
-  print ("%s" % note1)
-  print ("%s" % note2)
+def test(note, integer) :
+  print ("%s %d" % (note, integer))
 
-test("파라미터", "테스트")
+test("정수포함 파라미터:", 12345)
