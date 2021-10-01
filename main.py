@@ -1,21 +1,22 @@
-# tuple 연습
+# dict 연습
 
-x = tuple()
-y = ()
+x = dict()
+y = {}
 
 print(x)
 print(y)
 
-# List와 동일하게 선언할 수 있으며 비슷한 기능을 가지고 있음
-x = (1, 2, 3)
-y = ('a', 'b', 'c')
-z = (1, "hello", "there")
+x = {
+  "name": "철수",
+  "age": 20,
+}
 
-# List와 지원하는 기능을 이용 할 수 있음
-print(x + y)
-print('a' in y)
-print(z.index(1))
+# dict는 Key와 Value로 구성, Map과 유사한 기능으로 보임
+print(x["name"])
+print(x["age"])
 
-# 하지만 이미 선언한 값을 변경 할 수 없음
-# 자바의 Enum과 비슷한 매커니즘으로 보임
-# x[0] = 10 : Error
+print(x.keys()) # x의 Key 전체 출력
+print(x.values()) # x의 Value 전체 출력
+
+for n in x: # dict의 모든 key-value 출력
+  print(n + ":" + str(x[n]))
